@@ -1,4 +1,4 @@
-package com.company.day5;
+package com.company.day_5_homework;
 
 public class Main {
 
