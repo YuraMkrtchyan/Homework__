@@ -1,6 +1,4 @@
-package com.company;
-
-import org.w3c.dom.ls.LSOutput;
+package com.company.Day_8_homework;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -21,8 +19,8 @@ public class Main {
 //        isEven(sc.nextInt());
 
         //3
-//        System.out.println();
-//        rand(random.nextInt());
+        System.out.println();
+        rand(random.nextInt());
 
         //4
 //        System.out.println("input number (is multiple of 5?)");
