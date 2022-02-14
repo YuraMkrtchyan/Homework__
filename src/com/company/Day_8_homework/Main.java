@@ -19,8 +19,8 @@ public class Main {
 //        isEven(sc.nextInt());
 
         //3
-        System.out.println();
-        rand(random.nextInt());
+//        System.out.println();
+//        rand(random.nextInt());
 
         //4
 //        System.out.println("input number (is multiple of 5?)");
