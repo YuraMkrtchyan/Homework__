@@ -73,8 +73,7 @@ public class Triangle {
     private boolean b = isRight();
 
     public double count(int sideA, int sideB, int sideC, int p) {
-        double d = p * (p - sideA) * (p - sideB) * (p - sideC);
-        return (Math.sqrt(d));
+        return (Math.sqrt(p * (p - sideA) * (p - sideB) * (p - sideC)));
     }
 
     public int count(int sideA, int sideB, int sideC) {
