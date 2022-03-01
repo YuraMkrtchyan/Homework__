@@ -53,7 +53,6 @@ public class Store {
         this.products = products;
     }
 
-
     public boolean isCountOfWorkersInRange() {
         return (countOfWorkers >= 2 && countOfWorkers <= 50);
     }
@@ -86,5 +85,4 @@ public class Store {
         }
         return true;
     }
-
 }

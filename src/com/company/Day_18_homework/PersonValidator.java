@@ -13,7 +13,7 @@ public class PersonValidator {
         return (firstName.length() >= 3 && firstName.length() <= 15);
     }
 
-    public static boolean isLastNameInRange(String  lastName) {
+    public static boolean isLastNameInRange(String lastName) {
         return (lastName.length() >= 6 && lastName.length() <= 20);
     }
 
@@ -26,14 +26,15 @@ public class PersonValidator {
     }
 
 
-    public static boolean isPassportIdValid(String passportId){
+    public static boolean isPassportIdValid(String passportId) {
         return (passportId.length() == 8 && passportId.substring(0, 2).equals("AN")
                 && stringIsNumber(passportId.substring(2)));
     }
-    public static boolean stringIsNumber(String str){
+
+    public static boolean stringIsNumber(String str) {
         char[] arr = str.toCharArray();
         for (char item : arr) {
-            if(!Character.isDigit(item)){
+            if (!Character.isDigit(item)) {
                 return false;
             }
         }
