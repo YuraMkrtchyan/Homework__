@@ -1,4 +1,4 @@
-package com.company.Day_19_homework.Task3;
+package com.company.Day_19_homework.task3;
 
 public class FinancialAccount extends TaxAccounting {
 //● Write FinancialAccount class, which has fields:

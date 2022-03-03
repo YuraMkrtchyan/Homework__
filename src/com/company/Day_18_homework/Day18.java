@@ -12,4 +12,3 @@ public class Day18 {
         System.out.println(PersonValidator.isPassportIdValid("AN102543"));
     }
 }
-

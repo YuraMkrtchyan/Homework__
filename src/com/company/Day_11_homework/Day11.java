@@ -30,7 +30,7 @@ public class Day11 {
 //        naturalDivisors(sc.nextInt());
 
         //9
-//        sumOfnumbers();
+//        sumOfNumbers();
 
         //10
 //        binToDecimal(sc.nextInt());
@@ -181,7 +181,7 @@ public class Day11 {
     /**
      * 9. sum of 10 numbers
      */
-    public static void sumOfnumbers() {
+    public static void sumOfNumbers() {
         int sum = 0;
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < 10; i++) {

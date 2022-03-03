@@ -1,4 +1,4 @@
-package com.company.Day_19_homework.Task3;
+package com.company.Day_19_homework.task3;
 
 public class Marketing extends ItCompany {
     //● Write Marketing class, which extend iTCompany class and has fields:

@@ -1,4 +1,4 @@
-package com.company.Day_19_homework.Task2;
+package com.company.Day_19_homework.task2;
 
 public class TaxAccounting extends Accounting {
     final static int tax = 10;

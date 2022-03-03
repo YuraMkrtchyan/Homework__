@@ -1,4 +1,4 @@
-package com.company.Day_19_homework.Task3;
+package com.company.Day_19_homework.task3;
 
 public class TaxAccounting extends Accounting{
 // ● Write TaxAccounting class, which has fields:

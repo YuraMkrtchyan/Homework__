@@ -57,6 +57,7 @@ public class Day10 {
         //17
 //        System.out.println(sumOfDigits(sc.nextInt()));
 
+
     }
 
     /**
@@ -85,7 +86,6 @@ public class Day10 {
 
     /**
      * 3. squares of natural numbers
-     *
      * @param n
      */
     public static void NaturalNumbersSquare(int n) {
@@ -256,7 +256,7 @@ public class Day10 {
      */
     public static void athlete(double x, double y) {
         int days = 0;
-        while (x <= y) {
+        while (x < y) {
             x *= 1.1;
             days++;
         }

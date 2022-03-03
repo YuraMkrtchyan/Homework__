@@ -1,7 +1,5 @@
 package com.company.Day_14_homework;
 
-import java.time.Clock;
-import java.time.LocalDateTime;
 import java.util.Scanner;
 
 public class Day14 {
@@ -46,7 +44,8 @@ public class Day14 {
 //        System.out.println("Enter a Binary string: ");
 //        bin2Dec(sc.nextLine());
 
-
+        //12
+//        System.out.println(duplicateChars(sc.nextLine()));
 
         //13
 //        System.out.println(nonRepeat(sc.nextLine()));
@@ -268,6 +267,36 @@ public class Day14 {
         }
         System.out.println("The equivalent decimal number for binary " +
                 "\"" + str + "\" is: " + inDecimal);
+    }
+
+    /**
+     * 12. Write a function that counts duplicate characters from a given string.
+     *
+     * @param str
+     * @return
+     */
+    public static int duplicateChars(String str) {
+        int count = 0;
+        char ch;
+        // dasaxos
+
+        StringBuilder sb = new StringBuilder(str);
+
+        char[] arr = str.toCharArray();
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    count++;
+                    ch = arr[i];
+                    sb.deleteCharAt(j);
+                    sb.append(" ");
+                }
+            }
+
+        }
+
+
+        return count;
     }
 
     /**
