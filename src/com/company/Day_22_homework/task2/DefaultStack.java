@@ -32,7 +32,7 @@ public class DefaultStack implements Stack {
     }
     @Override
     public int pop() {
-        if (index <= 0) {
+        if (index == 0) {
             throw new EmptyStackException();
         }
         index--;
