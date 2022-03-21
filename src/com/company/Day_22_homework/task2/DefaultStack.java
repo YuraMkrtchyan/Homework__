@@ -15,8 +15,10 @@ public class DefaultStack implements Stack {
 
     public static void main(String[] args) {
         DefaultStack defaultStack = new DefaultStack();
-        defaultStack.pop();
+
         defaultStack.push(23);
+        defaultStack.pop();
+        defaultStack.pop();
         defaultStack.push(34);
         defaultStack.push(45);
         defaultStack.push(56);
