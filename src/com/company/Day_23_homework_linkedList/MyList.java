@@ -1,6 +1,6 @@
-package com.company.Day_23_homework;
+package com.company.Day_23_homework_linkedList;
 
-public interface List {
+public interface MyList extends Iterable<MyLinkedList.Node> {
     int size();
 
     boolean isEmpty();

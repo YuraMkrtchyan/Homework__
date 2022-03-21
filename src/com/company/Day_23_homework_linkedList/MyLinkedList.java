@@ -1,12 +1,12 @@
-package com.company.Day_23_homework;
+package com.company.Day_23_homework_linkedList;
 
 import java.util.Iterator;
 
-public class LinkedList implements List, Iterable<LinkedList.Node> {
+public class MyLinkedList implements MyList {
     private int size;
     private Node head;
 
-    public LinkedList() {
+    public MyLinkedList() {
     }
 
     @Override
@@ -18,12 +18,19 @@ public class LinkedList implements List, Iterable<LinkedList.Node> {
     public boolean isEmpty() {
         return size == 0;
     }
+    
+    private boolean isElementIndex(int index){
+        return (index >= 0 && index < size);
+    }
+    private void checkElementIndex(int index){
+        if (!isElementIndex(index)){
+            throw new IndexOutOfBoundsException(index);
+        }
+    }
 
     @Override
     public int get(int index) {
-        if (index < 0 || index >= size) {
-            throw new IndexOutOfBoundsException();
-        }
+        this.checkElementIndex(index);
         Node current = head;
         for (int i = 0; i < index; i++) {
             current = current.next;
@@ -117,7 +124,8 @@ public class LinkedList implements List, Iterable<LinkedList.Node> {
     }
 
 
-    public class Node {
+
+    public static class Node {
         int val;
         Node next;
 

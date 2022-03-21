@@ -1,13 +1,13 @@
-package com.company.Day_23_homework;
+package com.company.Day_23_homework_linkedList;
 
 public class Main {
     public static void main(String[] args) {
-        LinkedList list = new LinkedList();
+        MyLinkedList list = new MyLinkedList();
         list.add(12);
         list.add(34);
         list.add(56);
 
-        for (LinkedList.Node node : list) {
+        for (MyLinkedList.Node node : list) {
             System.out.println(node.val);
         }
 
