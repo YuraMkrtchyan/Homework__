@@ -3,9 +3,9 @@ package com.company.Day_25_homework;
 public class Main {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4};
-//        System.out.println(Task1.sumOfArrayElem(arr));
+//        System.out.println(List.sumOfArrayElem(arr));
 
-//        System.out.println(Task1.factorial(4));
+//        System.out.println(List.factorial(4));
 //
 //        System.out.println(Task3.sumOfBlocks(4));
 //

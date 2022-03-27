@@ -15,14 +15,15 @@ public class Task2 {
         System.out.println(set);
 
 
-//        Map<Integer, Integer> numFreq = new HashMap<>();
-//        for (int num : arr) {
-//            numFreq.put(num, numFreq.getOrDefault(num, 0) + 1);
-//        }
-//        for (Map.Entry<Integer, Integer> entry : numFreq.entrySet()) {
-//            if (entry.getValue() == 1) {
-//                System.out.println(entry.getKey());
-//            }
-//        }
+//        {2,1,4,1,2,1,2}
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i : arr) {
+            map.put(i, map.getOrDefault(i, 0) + 1);
+        }
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            if (entry.getValue() == 1) {
+                System.out.println(entry.getKey());
+            }
+        }
     }
 }

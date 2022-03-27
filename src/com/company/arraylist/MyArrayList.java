@@ -3,7 +3,7 @@ package com.company.arraylist;
 import java.util.Arrays;
 import java.util.Iterator;
 
-public class MyArrayList implements List {
+public class MyArrayList implements MyList {
     private int size;
     private Integer[] array;
     private static final int CAPACITY = 5;

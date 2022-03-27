@@ -2,7 +2,7 @@ package com.company.arraylist;
 
 public class Main {
     public static void main(String[] args) {
-        List list = new MyArrayList();
+        MyList list = new MyArrayList();
 
 //        System.out.println(list.size());
         list.add(4);

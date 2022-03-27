@@ -2,7 +2,7 @@ package com.company.arraylist;
 
 import java.util.ArrayList;
 
-public interface List extends Iterable<Integer> {
+public interface MyList extends Iterable<Integer> {
     int size();
 
     boolean isEmpty();

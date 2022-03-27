@@ -1,24 +1,23 @@
 package com.company.Day_24_homework;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.HashMap;
+import java.util.Map;
 
 //3. Write a method that counts duplicate characters from a given string.
 public class Task3 {
-    public static void countDuplicates(String str) {
+    public static int countDuplicates(String str) {
+        int count = 0;
         char[] arr = str.toCharArray();
-
-        Set<Character> set = new HashSet<>();
-        Set<Character> setDuplicates = new HashSet<>();
+        Map<Character, Integer> map = new HashMap<>();
         for (char ch : arr) {
-            set.add(ch);
+            map.put(ch, map.getOrDefault(ch, 0) + 1);
         }
-        for (char ch : arr) {
-            if (set.contains(ch)) {
-                setDuplicates.add(ch);
+        for (Map.Entry<Character, Integer> entry : map.entrySet()) {
+            if (entry.getValue() > 1){
+                count++;
             }
         }
-        System.out.println(setDuplicates.size());
+        return count;
     }
 }
 
